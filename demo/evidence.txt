@@ -1,0 +1,11 @@
+== durable agent state machine: crash-kill + resume demo ==
+runs dir: /home/jarvis/spark/agentic-projects/project-01-durable-agent-state-machine/runs/crash-demo
+started run; waiting for `analyze` to begin...
+analyze is running — SIGKILLing the process now.
+process killed (returncode -9)
+ledger after kill: fetch started x1, enrich succeeded x1, analyze started x1
+resuming from checkpoint...
+run crash-demo: completed  (/home/jarvis/spark/agentic-projects/project-01-durable-agent-state-machine/runs/crash-demo)
+final ledger: fetch started x1 (must be 1 — no re-execution), analyze started x2 (must be 2 — interrupted, then re-run)
+report exists: True
+PASS: run completed from checkpoint; no completed step was re-executed.
